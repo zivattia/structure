@@ -1,0 +1,10 @@
+#remove the chr name leave just the number of 
+sed 's/str//g' file_name > outFile
+##Convert from vcf to structure format
+/home/pogoda/software/plink --vcf vcf_table.vcf --recode structure --double-id --out vcf_table.str
+
+##delete the top two lines of the file that was created
+
+##modify the mainparams and extraparams file to include if we have prior group information or not. this iles are foud in the structure folder (/home/pogoda/software/Structure/console) output should be in that folder as well
+
+

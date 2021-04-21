@@ -1,0 +1,9 @@
+#change all the main parameters files before running
+#run structure
+#make a file that is called k_list with the number of K wanted (1-12)
+cat k_list |while read line; do
+
+        sed "s/QQQQ/$line/g" temp_mainparams > mainparams
+        ./structure
+
+done
